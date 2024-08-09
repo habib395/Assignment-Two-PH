@@ -250,6 +250,7 @@
     color: rgba(255, 255, 255, 1);
 }
 .try-to-catch{
+    border: 4px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 .run-extra{
@@ -286,13 +287,12 @@
     margin-top: 1.8rem;
 }
 .train-image img{
+    object-fit: none;
+    object-position: 65% 28%;
     max-width: 380px;
     height: 286px;
     border-radius: 2rem;
     padding: 1rem;
-}
-.small-dev{
-    display: none;
 }
 .BMI-calculator{
     max-width: 615px;
@@ -523,6 +523,23 @@ table tr td, th{
     color: rgba(255, 255, 255, 1);
     padding: 2rem 1rem;
 }
+.container{
+    position: relative;
+    color: #fff;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 1rem;
+    left: 16px;
+  }
+  .container p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "Inter", serif;
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 1);
+  }
+  
 /* fitness diet plan end */
 
 /* footer-section-start */
@@ -687,14 +704,8 @@ footer{
      padding-bottom: 3rem;
      display: inline-block;
     }
-    .large-dev{
-        display: none;
-    }
     .m-devise{
         padding: 1rem 8.5rem;
-    }
-    .small-dev{
-        display: inline-block;
     }
     .run-extra{
         margin: 0 1rem;
@@ -714,11 +725,15 @@ footer{
     .activity{
         width: 95%;
     }
+    .train-image img{
+        object-fit: cover;
+        object-position: 65% 28%;
+    }
     .meet-section-images{
         grid-template-columns: repeat(1, 1fr);
         height: 1200px;
         margin: 0 1.5rem;
-        padding: 1rem 0;
+        padding: 1rem 1.6rem;
     }
     .fitness-section-images{
         grid-template-columns: repeat(1, 1fr);

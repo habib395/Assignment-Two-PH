@@ -254,7 +254,7 @@
 }
 .run-extra{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 970px;
     margin: 0 auto;
@@ -265,6 +265,7 @@
 .run-extra-content{
     max-width: 395px;
     height: 265px;
+    padding-left: 3rem;
 }
 .run-extra-content h3{
     font-size: 3rem;
@@ -379,7 +380,7 @@ form input, .gender, .activity{
     width: 45%;
 }
 .activity{
-    width: 92%;
+    width: 92.5%;
 }
 .large-input{
     width: 92%;
@@ -408,6 +409,121 @@ table tr td, th{
 
 /* bmi-calculator end */
 
+/* meet-our-section-start */
+.meet-our-section{
+    max-width: 1366px;
+    height: 960px;
+    background-color: #000;
+}
+.meet-section-full{
+    max-width: 1060px;
+    height: 785px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.meet-section-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-radius: 1.2rem;
+    max-width: 1366px;
+    height: 600px;
+    margin-top: 4rem;
+    padding-left:1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.meet-section-images img{
+    width: 330px;
+    height: 275px;
+    border-radius: 18px;
+}
+.meet-section-heading{
+    max-width: 600px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+.meet-section-heading h3{
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Inter", serif;
+    color: rgba(255, 255, 255, 1);
+}
+.meet-section-heading p{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "Inter", serif;
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 1rem;
+}
+/* meet-our-section-end */
+/* fitness diet plan start */
+.fitness-our-section{
+    max-width: 1366px;
+    height: 1000px;
+    background: linear-gradient(180deg, #111111 100%, rgba(119, 119, 119, 0) 100%);
+}
+.fitness-section-full{
+    max-width: 1060px;
+    height: 785px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.fitness-section-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    border-radius: 1.2rem;
+    max-width: 1366px;
+    height: 700px;
+    margin-top: 4rem;
+    padding-left:1rem;
+    background-color: #000;
+}
+.fitness-section-images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 3rem;
+    padding: 2rem;
+}
+.fitness-section-heading{
+    max-width: 600px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+}
+.fitness-section-heading h3{
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: "Inter", serif;
+    color: rgba(230, 83, 60, 1);
+}
+.fitness-section-heading p{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "Inter", serif;
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 1);
+    padding: 0 1rem;
+}
+.card-one{
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+}
+.card-one p{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: "Inter", serif;
+    opacity: 0.3;
+    color: rgba(255, 255, 255, 1);
+    padding: 2rem 1rem;
+}
+/* fitness diet plan end */
 
 /* footer-section-start */
 footer{
@@ -502,8 +618,12 @@ footer{
       .run-extra,
       .bmi-calculator-section,
       .footer-container-box, 
-      .footer-container-box-two{
+      .footer-container-box-two,
+      .card-one{
         flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse;
     }
     .banner-container{
         margin-left: 0.5rem;
@@ -556,6 +676,9 @@ footer{
     .short-max{
         display: none;
     }
+    .habit-section{
+        backface-visibility: hidden;
+    }
     .habit-section, .bmi-calculator-section{
         height: auto;
     }
@@ -590,6 +713,39 @@ footer{
     }
     .activity{
         width: 95%;
+    }
+    .meet-section-images{
+        grid-template-columns: repeat(1, 1fr);
+        height: 1200px;
+        margin: 0 1.5rem;
+        padding: 1rem 0;
+    }
+    .fitness-section-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hidden{
+        display: none;
+    }
+    .meet-section-images img{
+        margin: 0 auto;
+    }
+    .meet-our-section{
+        height: 1450px;
+    }
+    .fitness-our-section{
+        height: 3300px;
+    }
+    .fitness-section-images{
+        height: 3000px;
+        padding: 1rem 0;
+    }
+    .card-one, .fitness-section-images{
+        margin: 1rem;
+    }
+    .fitness-section-images img{
+        margin: 0 auto;
+        width: 350px;
+        height: 300px;
     }
     .footer-container{
         padding: 3rem 1.5rem;

@@ -526,6 +526,7 @@ table tr td, th{
 .container{
     position: relative;
     color: #fff;
+    margin: 0 auto;
 }
 .bottom-left {
     position: absolute;
